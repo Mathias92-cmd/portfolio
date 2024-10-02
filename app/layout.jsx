@@ -1,13 +1,15 @@
-import { JetBrains_Mono } from "next/font/local";
+import { JetBrains_Mono } from "next/font/google"; // Corriger l'import ici
 import localFont from "next/font/local";
 import "./globals.css";
 
+// JetBrains Mono from Google Fonts
 const jetbrainsMono = JetBrains_Mono({
     subsets: ["latin"],
     weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
     variable: '--font-jetbrains-Mono',
 });
 
+// Local fonts GeistSans et GeistMono
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
     variable: "--font-geist-sans",
