@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
+import StairEffect from "@/components/StairsEffect";
 
 // JetBrains Mono from Google Fonts
 const jetbrainsMono = JetBrains_Mono({
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
         <body className={jetbrainsMono.variable}>
         <Header />
+        <StairEffect />
         <PageTransition>
             {children}
         </PageTransition>
