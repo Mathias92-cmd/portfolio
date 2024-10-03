@@ -23,8 +23,21 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				background: 'var(--background)',
-				foreground: 'var(--foreground)',
+				primary:  "#1c1c22",
+				accent: {
+					DEFAULT: "#00e187",
+					hover: "#00e187",
+				},
+			},
+			keyframes: {
+				"accordion-down": {
+					from: { height: "8"},
+					to: { height: "var(--radix-accordion-content-height)"},
+				},
+				"accordion-up": {
+					from: { height: "var(--radix-accordion-content-height)"},
+					to: { height: "8"},
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
