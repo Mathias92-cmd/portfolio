@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
+import Photo from "@/components/Photo";
 
 const Home = () => {
     return (
@@ -10,7 +11,7 @@ const Home = () => {
                     <div className="text-center xl:text-left">
                         <span>Developpeur Junior</span>
                         <h1 className="h1 mb-6">
-                            Bonjour je suis <br /> <span className="text-accent">Morel Mathias</span>
+                            Bonjour je suis <br/> <span className="text-accent">Morel Mathias</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
                             Je suis un étudiant en BUT informatique à l&#39;Université de Lens. Je suis passionné par le
@@ -29,7 +30,9 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div>Photo</div>
+                    <div>
+                        <Photo />
+                    </div>
                 </div>
             </div>
         </section>

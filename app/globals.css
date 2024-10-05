@@ -5,10 +5,15 @@
 @layer base {
   :root {
     --radius: 0.5rem;
+    --text-accent: #a3c4f3;
   }
 
   body {
     @apply font-primary bg-primary text-white;
+  }
+
+  .text-accent {
+    color: var(--text-accent) !important; /* Add !important */
   }
 
   .h1 {
