@@ -6,7 +6,7 @@ import Link from "next/link";
 import {CiMenuFries} from 'react-icons/ci';
 
 
-const Links = [
+const links = [
     {
         name: 'home',
         path: '/',
@@ -22,7 +22,7 @@ const Links = [
     },{
         name: 'contact',
         path: '/contact',
-    }
+    },
 ];
 
 const MobileNav = () => {
@@ -40,7 +40,7 @@ const MobileNav = () => {
                 </Link>
             </div>
             <nav className="flex flex-col justify-center items-center gap-8">
-                {Links.map((link, index)  => {
+                {links.map((link, index)  => {
                     return (
                     <Link
                         href={link.path}
