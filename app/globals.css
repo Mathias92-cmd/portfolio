@@ -6,6 +6,7 @@
   :root {
     --radius: 0.5rem;
     --text-accent: #a3c4f3;
+    --text-accent-hover: #82a1d9;
   }
 
   body {

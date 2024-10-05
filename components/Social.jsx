@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { FaGithub , FaLinkedin} from 'react-icons/fa';
 
 const resSocial = [
-    {icon: <FaGithub />, path: ''},
-    {icon: <FaLinkedin />, path: ''},
+    {icon: <FaGithub />, path: 'https://github.com/Mathias92-cmd'},
+    {icon: <FaLinkedin />, path: 'https://www.linkedin.com/in/mathias-morel-753951329/'},
 ];
 
 
