@@ -18,6 +18,15 @@ const stats = [
     },
 ];
 
+/**
+ * Stats component displays a list of statistics with animated counters.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Stats />
+ * )
+ */
 const Stats = () => {
     return (
         <section>
