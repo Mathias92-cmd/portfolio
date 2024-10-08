@@ -1,8 +1,9 @@
 "use client";
 
-import {faHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaHtml5, FaPython, FaPhp} from 'react-icons/fa';
-
-import { SiTailwindcss , SiNextdotjs } from "react-icons/si";
+import { motion } from "framer-motion";
+import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPython, FaPhp } from 'react-icons/fa';
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
     title: "About Me",
@@ -86,9 +87,30 @@ const skills = {
     ]
 };
 
-
 const Resume = () => {
-    return <div> Resume page</div>;
+    return (
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: {
+                    delay: 2.4, duration: 0.4, ease: "easeIn"
+                },
+            }}
+            className="min-h-[88vh] flex items-center justify-center py-12 xl:py-8"
+        >
+            <div className="container mx-auto">
+                <Tabs defaultValue="experience"
+                     className="flex flex-col xl:flex-row gap-[60px]">
+                    <TabsList>
+                        <TabsTrigger value="experience">Experience</TabsTrigger>
+                        <TabsTrigger value="skills">Skills</TabsTrigger>
+                        <TabsTrigger value="aboutme">About me</TabsTrigger>
+                    </TabsList>
+                </Tabs>
+            </div>
+        </motion.div>
+    );
 };
 
 export default Resume;
