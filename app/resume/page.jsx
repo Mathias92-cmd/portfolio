@@ -87,6 +87,11 @@ const skills = {
     ]
 };
 
+/**
+ * Resume component
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const Resume = () => {
     return (
         <motion.div
