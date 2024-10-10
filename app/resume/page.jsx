@@ -83,6 +83,9 @@ const skills = {
         {
             icon: <FaReact />,
             title: "React"
+        }, {
+            icon: <FaJs />,
+            title: "JavaScript"
         }
     ]
 };
