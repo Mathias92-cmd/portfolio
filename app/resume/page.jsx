@@ -59,6 +59,10 @@ const experience = {
     ]
 };
 
+/**
+ * Skills data
+ * @type {{icon: string, title: string, description: string, skillList: {icon: JSX.Element, title: string}[]}}
+ */
 const skills = {
     icon: "🛠",
     title: "Skills",
