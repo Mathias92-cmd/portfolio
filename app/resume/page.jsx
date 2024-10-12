@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {Tabs, TabsContent, TabsList, TabsTrigger} from "@radix-ui/react-tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPython, FaPhp } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
