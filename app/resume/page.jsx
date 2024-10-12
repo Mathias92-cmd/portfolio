@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPython, FaPhp } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import {ScrollArea} from "@/components/ui/scroll-area";
+import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
 const about = {
     title: "About Me",
@@ -77,30 +78,30 @@ const experience = {
 const skills = {
     icon: "🛠",
     title: "Skills",
-    description: "Lorem",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus.",
     skillList: [
         {
             icon: <FaHtml5 />,
-            title: "HTML"
+            name: "HTML"
         },
         {
             icon: <FaCss3 />,
-            title: "CSS"
+            name: "CSS"
         },
         {
             icon: <FaPython />,
-            title: "Python"
+            name: "Python"
         },
         {
             icon: <FaPhp />,
-            title: "PHP"
+            name: "PHP"
         },
         {
             icon: <FaReact />,
-            title: "React"
+            name: "React"
         }, {
             icon: <FaJs />,
-            title: "JavaScript"
+            name: "JavaScript"
         }
     ]
 };
@@ -144,7 +145,7 @@ const Resume = () => {
                                             <li key={index} className="timeline-item">
                                                 <div className="timeline-icon"></div>
                                                 <div className="timeline-content">
-                                                    <span>{item.date}</span>
+                                                    <span className="text-accent">{item.date}</span>
                                                     <h3>{item.poste}</h3>
                                                     <p>{item.etablissement}</p>
                                                 </div>
@@ -154,8 +155,29 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
-                        <TabsContent value="skills" className="w-full mt-6">
-                            skills
+                        <TabsContent value="skills" className="w-full h-full">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-semibold">{skills.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                    {skills.description}
+                                </p>
+                            </div>
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                                {skills.skillList.map((skill, index) => (
+                                    <li key={index}>
+                                        <TooltipProvider>
+                                            <Tooltip>
+                                                <TooltipTrigger>
+                                                    <div>{skill.icon}</div>
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>{skill.name}</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </li>
+                                ))}
+                            </ul>
                         </TabsContent>
                         <TabsContent value="about" className="w-full mt-6">
                             about
