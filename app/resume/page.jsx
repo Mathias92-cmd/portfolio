@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "@radix-ui/react-tabs";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPython, FaPhp } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
@@ -106,19 +106,25 @@ const Resume = () => {
             animate={{
                 opacity: 1,
                 transition: {
-                    delay: 2.4, duration: 0.4, ease: "easeIn"
-                },
+                    delay: 2.4, duration: 0.4, ease: "easeIn"},
             }}
-            className="min-h-[88vh] flex items-center justify-center py-12 xl:py-8"
+            className="min-h-[80vh] flex items-center justify-center py-12 xl:py-8"
         >
             <div className="container mx-auto">
-                <Tabs defaultValue="experience"
-                     className="flex flex-col xl:flex-row gap-[60px]">
-                    <TabsList>
+                <Tabs
+                    defaultValue="experience"
+                    className="flex flex-col xl:flex-row gap-[60px]"
+                >
+                    <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="skills">Skills</TabsTrigger>
                         <TabsTrigger value="aboutme">About me</TabsTrigger>
                     </TabsList>
+                    <div className="min-h-[70vh] w-full">
+                        <TabsContent value="experience" className="w-full">
+                            experience
+                        </TabsContent>
+                    </div>
                 </Tabs>
             </div>
         </motion.div>
