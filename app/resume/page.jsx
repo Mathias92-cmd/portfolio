@@ -185,7 +185,7 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
-                        <TabsContent value="skills" className="w-full h-full">
+                        <TabsContent value="skills" className="w-full h-full mt-6">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left mb-6">
                                 <h3 className="text-4xl font-semibold">{skills.title}</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
