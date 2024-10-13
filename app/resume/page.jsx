@@ -14,7 +14,7 @@ import { VscVscode } from "react-icons/vsc";
 
 const about = {
     title: "About Me",
-    description: "Lorem",
+    description: "Lorem ispum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus.",
     info: [
         {
             fieldName: "Name",
@@ -38,7 +38,7 @@ const about = {
         },
         {
             fieldName: "Langages",
-            fielValue: "Anglais / Espagnol",
+            fielValue: "Anglais (B2) / Espagnol (A2)",
         },
     ]
 };
@@ -158,9 +158,9 @@ const Resume = () => {
                     className="flex flex-col gap-[20px]"
                 >
                     <TabsList className="flex w-full justify-center gap-6 items-center flex-row">
-                        <TabsTrigger className="p-3 text-base" value="experience">Experience</TabsTrigger>
+                        <TabsTrigger className="p-3 text-base " value="experience">Experience</TabsTrigger>
                         <TabsTrigger className="p-3 text-base" value="skills">Skills</TabsTrigger>
-                        <TabsTrigger className="p-3 text-base" value="aboutme">About me</TabsTrigger>
+                        <TabsTrigger className="p-3 text-base" value="about">About me</TabsTrigger>
                     </TabsList>
                     <div className="w-full">
                         <TabsContent value="experience" className="w-full mt-6">
@@ -185,7 +185,7 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
-                        <TabsContent value="skills" className="w-full h-full mt-6">
+                        <TabsContent value="skills" className="w-full h-full mt-6 text-accent">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left mb-6">
                                 <h3 className="text-4xl font-semibold">{skills.title}</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
@@ -197,7 +197,7 @@ const Resume = () => {
                                     <li key={index}>
                                         <TooltipProvider delayDuration={100}>
                                             <Tooltip>
-                                                <TooltipTrigger className="w-full h-[150px] bg-[#82a1d9] rounded-xl flex justify-center items-center group">
+                                                <TooltipTrigger className="w-full h-[150px] bg-[#262629] rounded-xl flex justify-center items-center group">
                                                     <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
                                                 </TooltipTrigger>
                                                 <TooltipContent>
@@ -209,8 +209,22 @@ const Resume = () => {
                                 ))}
                             </ul>
                         </TabsContent>
-                        <TabsContent value="about" className="w-full mt-6">
-                            about
+                        <TabsContent value="about" className="w-full mt-6 text-accent">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left mb-6">
+                                <h3 className="text-4xl font-semibold">{about.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                    {about.description}
+                                </p>
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-[980px] mx-auto xl:mx-0">
+                                    {about.info.map((item, index) => (
+                                        <li key={index}
+                                            className="flex items-center justify-center xl:justify-start gap-4 bg-[#262629] rounded-xl p-4">
+                                            <span className="text-white/60">{item.fieldName}</span>
+                                            <span className="text-xl whitespace-nowrap">{item.fielValue}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </TabsContent>
                     </div>
                 </Tabs>
