@@ -2,10 +2,15 @@
 
 import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPython, FaPhp } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPython, FaPhp , FaLinux , FaLaravel , FaJava} from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import {ScrollArea} from "@/components/ui/scroll-area";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiJetbrains , SiFlask } from "react-icons/si";
+import { SiGnubash } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+
 
 const about = {
     title: "About Me",
@@ -89,6 +94,10 @@ const skills = {
             name: "CSS"
         },
         {
+            icon: <FaJava />,
+            name: "Java"
+        } ,
+        {
             icon: <FaPython />,
             name: "Python"
         },
@@ -97,11 +106,32 @@ const skills = {
             name: "PHP"
         },
         {
-            icon: <FaReact />,
-            name: "React"
-        }, {
-            icon: <FaJs />,
-            name: "JavaScript"
+            icon: <BiLogoPostgresql />,
+            name: "PostgreSQL"
+        },
+        {
+            icon: <FaLinux />,
+            name: "Linux"
+        },
+        {
+            icon: <FaLaravel />,
+            name: "Laravel"
+        },
+        {
+            icon: <SiJetbrains />,
+            name: "IntelliJ"
+        },
+        {
+            icon: <SiFlask />,
+            name: "Flask"
+        },
+        {
+            icon: <SiGnubash />,
+            name: "Bash"
+        },
+        {
+            icon: <VscVscode />,
+            name: "VSCode"
         }
     ]
 };
@@ -167,7 +197,7 @@ const Resume = () => {
                                     <li key={index}>
                                         <TooltipProvider>
                                             <Tooltip>
-                                                <TooltipTrigger>
+                                                <TooltipTrigger className="text-5xl group-hover:text-accent transition-all duration-300">
                                                     <div>{skill.icon}</div>
                                                 </TooltipTrigger>
                                                 <TooltipContent>
