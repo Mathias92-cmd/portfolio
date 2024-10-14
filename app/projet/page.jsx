@@ -46,7 +46,11 @@ const projects = [
     }
 ]
 
-
+/**
+ * Projet component
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const Projet = () => {
     const [project, setProject] = useState(projects[0]);
     return (
