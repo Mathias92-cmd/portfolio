@@ -4,7 +4,12 @@ import Nav from "./Nav";
 import MobileNav from "@/components/MobileNav";
 
 
-
+/**
+ *
+ * Header component
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const Header = () => {
     return (
     <header className="py-8 xl:py-12 text-white">
