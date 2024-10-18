@@ -12,6 +12,10 @@ const SelectGroup = SelectPrimitive.Group
 
 const SelectValue = SelectPrimitive.Value
 
+/**
+ * SelectTrigger component
+ * @type {React.ForwardRefExoticComponent<React.PropsWithoutRef<{readonly className?: *, readonly children?: *}> & React.RefAttributes<unknown>>}
+ */
 const SelectTrigger = React.forwardRef(({ className, children, ...props }, ref) => (
   <SelectPrimitive.Trigger
     ref={ref}
