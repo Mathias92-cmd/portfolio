@@ -15,21 +15,28 @@ import Image from 'next/image';
 const projects = [
     {
         num: '1',
-        category: 'backend',
+        category: 'Web app',
         title: 'Projet 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urn',
-        techs: ['Python', 'Django'],
-        image: '/tabBord.PNG',
+        description: 'Projet de tableau de bord réalisé avec Django et TailwindCSS',
+        techs: ['Python', 'Django' , 'TailwindCSS'],
+        image: '/tab.PNG',
         github: "https://github.com/Mathias92-cmd/TableauDeBord",
     },
     {
         num: '2',
         category: 'frontend',
         title: 'Projet 2',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urn',
-        techs: ['React', 'TailwindCSS'],
-        image: '/',
-        github: "",
+        description: (
+            <>
+                Projet de site web réalisé avec HTML, CSS et JavaScript lors du premier semestre de ma formation avec{' '}
+                <Link href="https://github.com/BenjaminC62" target="_blank" rel="noopener noreferrer" className="text-accent">
+                    BenjaminC62
+                </Link>.
+            </>
+        ),
+        techs: ['HTML', 'CSS', 'JavaScript'],
+        image: '/viartek.PNG',
+        github: "https://github.com/Mathias92-cmd/Viartek",
     },
     {
         num: '3',
@@ -97,7 +104,7 @@ const Projet = () => {
                                     </Tooltip>
                                 </TooltipProvider>
                             </Link>
-                            <Link href={project.github}>
+                            <a href={project.github} target="_blank" rel="noopener noreferrer">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -108,7 +115,7 @@ const Projet = () => {
                                         </TooltipContent>
                                     </Tooltip>
                                 </TooltipProvider>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <Swiper
@@ -122,10 +129,11 @@ const Projet = () => {
                     >
                         {projects.map((project, index) => (
                             <SwiperSlide key={index}>
-                                <div className="w-full h-[500px] relative group flex justify-center items-center bg-blue-500">
+                                <div className="w-full h-[500px] relative group flex justify-center items-center ">
                                     <Image src={project.image}
                                            fill
-                                           className="object-cover"
+                                           className="object-contain"
+                                           quality={100}
                                            alt=""
                                     />
                                 </div>
