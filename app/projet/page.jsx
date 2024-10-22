@@ -55,7 +55,16 @@ const projects = [
         techs: ['React', 'TailwindCSS'],
         image: '/',
         github: "",
-    }
+    },
+    {
+        num: '5',
+        category: 'backend',
+        title: 'Projet 5',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urn',
+        techs: ['Node.js', 'Express', 'MongoDB'],
+        image: '/',
+        github: "",
+    },
 ]
 
 const Projet = () => {
