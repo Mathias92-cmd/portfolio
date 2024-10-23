@@ -41,6 +41,10 @@ const TabsTrigger = React.forwardRef(({ className, ...props }, ref) => (
 ))
 TabsTrigger.displayName = TabsPrimitive.Trigger.displayName
 
+/**
+ * TabsContent component
+ * @type {React.ForwardRefExoticComponent<React.PropsWithoutRef<{readonly className?: *}> & React.RefAttributes<unknown>>}
+ */
 const TabsContent = React.forwardRef(({ className, ...props }, ref) => (
   <TabsPrimitive.Content
     ref={ref}
