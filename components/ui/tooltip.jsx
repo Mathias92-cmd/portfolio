@@ -7,10 +7,22 @@ import { cn } from "@/lib/utils"
 
 const TooltipProvider = TooltipPrimitive.Provider
 
+/**
+ * Tooltip component
+ * @type {React.FC<TooltipProps>}
+ */
 const Tooltip = TooltipPrimitive.Root
 
+/**
+ * TooltipTrigger component
+ * @type {React.ForwardRefExoticComponent<TooltipTriggerProps & React.RefAttributes<HTMLButtonElement>>}
+ */
 const TooltipTrigger = TooltipPrimitive.Trigger
 
+/**
+ * TooltipContent component
+ * @type {React.ForwardRefExoticComponent<React.PropsWithoutRef<{readonly className?: *, readonly sideOffset?: number}> & React.RefAttributes<unknown>>}
+ */
 const TooltipContent = React.forwardRef(({ className, sideOffset = 4, ...props }, ref) => (
   <TooltipPrimitive.Content
     ref={ref}
