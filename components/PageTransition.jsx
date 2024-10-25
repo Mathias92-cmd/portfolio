@@ -3,6 +3,12 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from "next/navigation";
 
+/**
+ * PageTransition component
+ * @param children
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const PageTransition = ({ children }) => {
     const pathname = usePathname();
     return (

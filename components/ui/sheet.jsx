@@ -44,7 +44,10 @@ const sheetVariants = cva(
     },
   }
 )
-
+/**
+ * SheetContent
+ * @type {React.ForwardRefExoticComponent<React.PropsWithoutRef<{readonly side?: string, readonly className?: *, readonly children?: *}> & React.RefAttributes<unknown>>}
+ */
 const SheetContent = React.forwardRef(({ side = "right", className, children, ...props }, ref) => (
   <SheetPortal>
     <SheetOverlay />
@@ -60,6 +63,13 @@ const SheetContent = React.forwardRef(({ side = "right", className, children, ..
 ))
 SheetContent.displayName = SheetPrimitive.Content.displayName
 
+/**
+ * SheetHeader
+ * @param className
+ * @param props
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const SheetHeader = ({
   className,
   ...props
@@ -70,6 +80,13 @@ const SheetHeader = ({
 )
 SheetHeader.displayName = "SheetHeader"
 
+/**
+ * SheetFooter
+ * @param className
+ * @param props
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const SheetFooter = ({
   className,
   ...props

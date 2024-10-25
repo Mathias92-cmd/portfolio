@@ -5,7 +5,10 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {CiMenuFries} from 'react-icons/ci';
 
-
+/**
+ * List of links for the mobile navigation
+ * @type {[{path: string, name: string},{path: string, name: string},{path: string, name: string},{path: string, name: string},{path: string, name: string}]}
+ */
 const links = [
     {
         name: 'home',
@@ -25,6 +28,11 @@ const links = [
     },
 ];
 
+/**
+ * MobileNav component
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const MobileNav = () => {
     const pathname = usePathname();
     return <Sheet>

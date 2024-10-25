@@ -12,6 +12,10 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import Link from 'next/link';
 import Image from 'next/image';
 
+/**
+ * List of projects
+ * @type {[{image: string, github: string, num: string, description: string, category: string, title: string, techs: string[]},{image: string, github: string, num: string, description: JSX.Element, category: string, title: string, techs: string[]},{image: string, github: string, num: string, description: string, category: string, title: string, techs: string[]},{image: string, github: string, num: string, description: string, category: string, title: string, techs: string[]},{image: string, github: string, num: string, description: string, category: string, title: string, techs: string[]}]}
+ */
 const projects = [
     {
         num: '1',

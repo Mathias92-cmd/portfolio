@@ -3,6 +3,10 @@
 import Link from 'next/link';
 import {usePathname} from "next/navigation";
 
+/**
+ * List of links for the navigation
+ * @type {[{path: string, name: string},{path: string, name: string},{path: string, name: string},{path: string, name: string},{path: string, name: string}]}
+ */
 const links = [
     {
         name: "home",
