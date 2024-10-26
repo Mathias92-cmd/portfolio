@@ -4,6 +4,10 @@ import { cva } from "class-variance-authority";
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Button component
+ * @type {(props?: (Props<{size: {default: string, lg: string, wd: string}, variant: {default: string, outline: string, primary: string}}> | undefined)) => string}
+ */
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-semibold ring-offset-white transition-colors",
   {
