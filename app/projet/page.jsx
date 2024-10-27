@@ -44,12 +44,28 @@ const projects = [
     },
     {
         num: '3',
-        category: 'fullstack',
+        category: 'java',
         title: 'Projet 3',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urn',
-        techs: ['React', 'Node.js', 'Express', 'MongoDB'],
-        image: '/',
-        github: "",
+        description: (
+            <>
+                Projet de gestionnaire de patient réalisé avec Java et JavaFX lors du deuxième semestre de ma formation avec{' '}
+                <Link href="https://github.com/BenjaminC62" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    BenjaminC62
+                </Link>
+                <Link href="https://github.com/MatheoDalmasso" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    MatheoDalmasso
+                </Link>
+                <Link href="https://github.com/MatheoDalmasso" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    MatheoDalmasso
+                </Link>
+                <Link href="https://github.com/Scouille" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    Simon Caillieret
+                </Link>
+            </>
+        ),
+        techs: ['Java', 'SceneBuilder', 'JavaFX'],
+        image: '/p3.PNG',
+        github: "https://github.com/Mathias92-cmd/Gestionnaire-de-Patient-Medecin",
     },
     {
         num: '4',
