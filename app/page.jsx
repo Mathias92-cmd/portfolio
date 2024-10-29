@@ -6,13 +6,13 @@ import Stats from "@/components/Stats";
 
 const Home = () => {
     return (
-        <section className="h-full flex flex-col justify-center items-center">
+        <section className="h-full min-h-screen flex flex-col justify-center items-center">
             <div className="container mx-auto h-full px-4 xl:px-0">
                 <div className="flex flex-col items-center xl:flex-row xl:items-start xl:justify-between xl:pt-8 xl:pb-24">
                     <div className="order-2 xl:order-none text-center xl:text-left">
                         <span>Developpeur Junior</span>
                         <h1 className="h1 mb-6">
-                            Bonjour, je suis <br/> <span className="text-accent">Morel Mathias</span>
+                            Bonjour, je suis <br /> <span className="text-accent">Morel Mathias</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
                             Je suis un étudiant en BUT informatique à l&#39;Université de Lens. Je suis passionné par le
