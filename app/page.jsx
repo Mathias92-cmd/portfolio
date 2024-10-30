@@ -4,6 +4,11 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
+/**
+ * Home page
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const Home = () => {
     return (
         <section className="h-full min-h-screen flex flex-col justify-center items-center">
