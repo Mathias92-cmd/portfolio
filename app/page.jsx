@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
-import Stats from "@/components/Stats";
+
 
 /**
  * Home page
@@ -40,9 +40,7 @@ const Home = () => {
                         <Photo />
                     </div>
                 </div>
-                <div className="w-full mt-8">
-                    <Stats />
-                </div>
+
             </div>
         </section>
     );
