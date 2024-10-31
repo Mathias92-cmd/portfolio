@@ -11,21 +11,21 @@ import {CiMenuFries} from 'react-icons/ci';
  */
 const links = [
     {
-        name: 'home',
+        name: 'Accueil',
         path: '/',
     }, {
-        name: 'services',
+        name: 'Service',
         path: '/services',
     },{
-        name: 'resume',
+        name: 'Skills',
         path: '/resume',
     },{
-        name: 'projet',
+        name: 'Projet',
         path: '/projet',
     },{
-        name: 'contact',
+        name: 'Contact',
         path: '/contact',
-    },
+    }
 ];
 
 /**
@@ -43,7 +43,7 @@ const MobileNav = () => {
             <div className="mt-32 mb-40 text-center text-2xl">
                 <Link href="/">
                     <h1 className="text-4xl font-semibold">
-                        Mathias <span className="text-accent">.</span>
+                        Mathias <span className="text-accent"></span>
                     </h1>
                 </Link>
             </div>

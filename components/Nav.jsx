@@ -9,19 +9,19 @@ import { usePathname } from "next/navigation";
  */
 const links = [
     {
-        name: "home",
+        name: "Accueil",
         path: "/",
     }, {
-        name: "services",
+        name: "Services",
         path: "/services",
     }, {
-        name: "resume",
+        name: "Skills",
         path: "/resume",
     }, {
-        name: "projet",
+        name: "Projets",
         path: "/projet",
     }, {
-        name: "contact",
+        name: "Contact",
         path: "/contact",
     },
 ];
