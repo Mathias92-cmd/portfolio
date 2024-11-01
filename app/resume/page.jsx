@@ -43,6 +43,9 @@ const about = {
     ]
 };
 
+/*
+    * Experience data
+ */
 const experience = {
     icon: "👨‍💻",
     title: "Experience",
