@@ -2,6 +2,10 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Input component
+ * @type {React.ForwardRefExoticComponent<React.PropsWithoutRef<{readonly className?: *, readonly type?: *}> & React.RefAttributes<unknown>>}
+ */
 const Input = React.forwardRef(({ className, type, ...props }, ref) => {
   return (
     (<input
