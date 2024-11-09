@@ -14,7 +14,7 @@ import { VscVscode } from "react-icons/vsc";
 
 const about = {
     title: "About Me",
-    description: "Lorem ispum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus.",
+    description: "Voici les différentes informations me concernant.",
     info: [
         {
             fieldName: "Name",
@@ -49,7 +49,7 @@ const about = {
 const experience = {
     icon: "👨‍💻",
     title: "Experience",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus.",
+    description: "Voici mon parcours scolaire et professionnel.",
     items: [
         {
             etablissement: "Université de Lens",
@@ -86,7 +86,7 @@ const experience = {
 const skills = {
     icon: "🛠",
     title: "Skills",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus.",
+    description: "Voici mes différentes compétences en développement.",
     skillList: [
         {
             icon: <FaHtml5 />,

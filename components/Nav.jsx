@@ -20,7 +20,11 @@ const links = [
     }, {
         name: "Contact",
         path: "/contact",
-    },
+    },{
+        name: "Telecharger mon CV",
+        path: "/cv.pdf",
+        className: "uppercase flex items-center gap-2 bg-[#262629] text-white py-2 px-4 rounded hover:bg-[#333] transition-colors"
+    }
 ];
 
 const Nav = () => {
