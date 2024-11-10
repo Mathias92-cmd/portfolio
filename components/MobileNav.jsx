@@ -4,6 +4,8 @@ import { Sheet , SheetContent , SheetTrigger } from '@/components/ui/sheet';
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {CiMenuFries} from 'react-icons/ci';
+import {FiDownload} from "react-icons/fi";
+import {Button} from "@/components/ui/button";
 
 /**
  * List of links for the mobile navigation
@@ -45,19 +47,27 @@ const MobileNav = () => {
                 </Link>
             </div>
             <nav className="flex flex-col justify-center items-center gap-8">
-                {links.map((link, index)  => {
+                {links.map((link, index) => {
                     return (
-                    <Link
-                        href={link.path}
-                        key={index}
-                        className={`${link.path === pathname && "text-accent border-b-2 border-accent"}
+                        <Link
+                            href={link.path}
+                            key={index}
+                            className={`${link.path === pathname && "text-accent border-b-2 border-accent"}
                         text-xl capitalize hover:text-accent transition-all`}
-                    >
-                        {link.name}
-                    </Link>
+                        >
+                            {link.name}
+                        </Link>
                     );
                 })}
             </nav>
+            <div className="flex justify-center mt-8">
+                <Link href="/cv.pdf">
+                    <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+                        <span>Téléchargez mon CV</span>
+                        <FiDownload className="text-4xl"/>
+                    </Button>
+                </Link>
+            </div>
         </SheetContent>
     </Sheet>
 }
