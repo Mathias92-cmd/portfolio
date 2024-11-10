@@ -26,14 +26,10 @@ const Home = () => {
                             développement d&#39;applications web, d&#39;applications mobiles et de jeux vidéos.
                         </p>
                         <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-4">
-                            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                                <span>Téléchargez mon CV</span>
-                                <FiDownload className="text-4xl" />
-                            </Button>
                             <div className="mb-8 xl:mb-0">
                                 <Social
-                                    containerStyles="flex gap-6"
-                                    iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center var(--text-accent) text-base hover:bg-[#82a1d9] hover:text-primary hover:transition-all duration-500"
+                                    containerStyles="flex gap-6 justify-center xl:justify-start"
+                                    iconStyles="w-12 h-12 border border-accent rounded-full flex justify-center items-center text-accent hover:bg-[#82a1d9] hover:text-primary transition-all duration-500"
                                 />
                             </div>
                         </div>
@@ -42,7 +38,6 @@ const Home = () => {
                         <Photo />
                     </div>
                 </div>
-
             </div>
         </section>
     );
