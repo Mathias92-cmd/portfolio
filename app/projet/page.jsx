@@ -69,21 +69,25 @@ const projects = [
     },
     {
         num: '4',
-        category: 'frontend',
-        title: 'Projet 4',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urn',
-        techs: ['React', 'TailwindCSS'],
-        image: '/',
-        github: "",
-    },
-    {
-        num: '5',
         category: 'backend',
-        title: 'Projet 5',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urna tincidunt luctus. Sed sit amet purus in urn',
-        techs: ['Node.js', 'Express', 'MongoDB'],
-        image: '/',
-        github: "",
+        title: 'Projet 4',
+        description: (
+            <>
+                Jeu en JavaFX réalisé lors du troisième semestre de ma formation, il s&apos;agit d&apos;un jeu appelé &quot;Bomberman&quot réalisé avec{' '}
+                <Link href="https://github.com/BenjaminC62" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    BenjaminC62
+                </Link>
+                <Link href="https://github.com/MatheoDalmasso" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    MatheoDalmasso
+                </Link>
+                <Link href="https://github.com/Scouille" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    Simon Caillieret
+                </Link>
+            </>
+        ),
+        techs: ['Java', 'JavaFX'],
+        image: '/bomberman.png',
+        github: "https://github.com/Mathias92-cmd/Bomberman",
     },
 ]
 
