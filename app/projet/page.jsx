@@ -73,7 +73,7 @@ const projects = [
         title: 'Projet 4',
         description: (
             <>
-                Jeu en JavaFX réalisé lors du troisième semestre de ma formation, il s&apos;agit d&apos;un jeu appelé &quot;Bomberman&quot réalisé avec{' '}
+                Jeu en JavaFX réalisé lors du troisième semestre de ma formation, il s&apos;agit d&apos;un jeu appelé "Bomberman" réalisé avec{' '}
                 <Link href="https://github.com/BenjaminC62" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
                     BenjaminC62
                 </Link>
