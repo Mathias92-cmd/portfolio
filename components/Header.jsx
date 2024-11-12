@@ -22,7 +22,7 @@ const Header = () => {
 
             <div className="hidden xl:flex items-center gap-8">
             <Nav />
-                <Link href="/cv.pdf">
+                <Link href="/CV_MOREL_Mathias.pdf">
                     <Button>Telecharger mon CV</Button>
                 </Link>
             </div>
