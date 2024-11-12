@@ -128,16 +128,6 @@ const Projet = () => {
                         </div>
                         <div className="flex items-center gap-4 mt-4">
                             <Link href={project.title}>
-                                <TooltipProvider delayDuration={100}>
-                                    <Tooltip>
-                                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                            <BsArrowUpRight className="text-3xl group-hover:text-accent" />
-                                        </TooltipTrigger>
-                                        <TooltipContent>
-                                            Voir le projet
-                                        </TooltipContent>
-                                    </Tooltip>
-                                </TooltipProvider>
                             </Link>
                             <a href={project.github} target="_blank" rel="noopener noreferrer">
                                 <TooltipProvider delayDuration={100}>
