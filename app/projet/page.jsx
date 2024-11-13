@@ -86,7 +86,7 @@ const projects = [
             </>
         ),
         techs: ['Java', 'JavaFX'],
-        image: '/bomber2.png',
+        image: '/bomber2.PNG',
         github: "https://github.com/Mathias92-cmd/Bomberman",
     },
 ]
