@@ -61,7 +61,7 @@ const MobileNav = () => {
                 })}
             </nav>
             <div className="flex justify-center mt-8">
-                <Link href="/cv.pdf">
+                <Link href="/CV_MOREL_Mathias.pdf">
                     <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                         <span>Téléchargez mon CV</span>
                         <FiDownload className="text-4xl"/>
