@@ -13,7 +13,7 @@ import { VscVscode } from "react-icons/vsc";
 
 
 const about = {
-    title: "About Me",
+    title: "A propos de moi",
     description: "Voici les différentes informations me concernant.",
     info: [
         {
@@ -85,7 +85,7 @@ const experience = {
  */
 const skills = {
     icon: "🛠",
-    title: "Skills",
+    title: "Compétences",
     description: "Voici mes différentes compétences en développement.",
     skillList: [
         {
@@ -162,8 +162,8 @@ const Resume = () => {
                 >
                     <TabsList className="flex w-full justify-center gap-6 items-center flex-row">
                         <TabsTrigger className="p-3 text-base " value="experience">Experience</TabsTrigger>
-                        <TabsTrigger className="p-3 text-base" value="skills">Skills</TabsTrigger>
-                        <TabsTrigger className="p-3 text-base" value="about">About me</TabsTrigger>
+                        <TabsTrigger className="p-3 text-base" value="skills">Compétences</TabsTrigger>
+                        <TabsTrigger className="p-3 text-base" value="about">A propos de moi</TabsTrigger>
                     </TabsList>
                     <div className="w-full">
                         <TabsContent value="experience" className="w-full mt-6">
