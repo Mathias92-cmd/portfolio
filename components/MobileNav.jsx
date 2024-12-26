@@ -59,9 +59,12 @@ const MobileNav = () => {
                         </Link>
                     );
                 })}
+                <a href="https://portfolio-en-flax.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <img src="/uk2.png" alt="English Version" style={{ width: '30px', height: '20px' }} />
+                </a>
             </nav>
             <div className="flex justify-center mt-8">
-                <Link href="/CV_MOREL_Mathias.pdf">
+                <Link href="/">
                     <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                         <span>Téléchargez mon CV</span>
                         <FiDownload className="text-4xl"/>
