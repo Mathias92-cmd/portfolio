@@ -39,6 +39,9 @@ const Nav = () => {
                     </Link>
                 );
             })}
+            <a href="https://portfolio-en-flax.vercel.app" target="_blank" rel="noopener noreferrer">
+                <img src="/uk2.png" alt="English Version" style={{ width: '30px', height: '20px' }} />
+            </a>
         </nav>
     );
 };
