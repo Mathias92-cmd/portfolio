@@ -89,6 +89,28 @@ const projects = [
         image: '/bomber2.PNG',
         github: "https://github.com/Mathias92-cmd/Bomberman",
     },
+    {
+        num: '5',
+        category: 'backend / frontend',
+        title: 'Projet 5',
+        description: (
+            <>
+                Site web réalisé avec laravel lors du marathon web organisé par l&apos;université de Lens
+                <Link href="https://github.com/BenjaminC62" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    BenjaminC62
+                </Link>
+                <Link href="https://github.com/MatheoDalmasso" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    MatheoDalmasso
+                </Link>
+                <Link href="https://github.com/Scouille" target="_blank" rel={"noopener noreferrer"} className="text-accent block mb-2">
+                    Simon Caillieret
+                </Link>
+            </>
+        ),
+        techs: ['Laravel', 'Css'],
+        image: '/marathon.png',
+        github: "https://github.com/Mathias92-cmd/Adventura",
+    },
 ]
 
 const Projet = () => {
